@@ -38,7 +38,7 @@
                     systems. Led architecture of real-time video rendering pipelines, internal tooling, and
                     customer-facing features, with a focus on performance, UX, and reliability.
                 </p>
-                <div class="mt-3 flex gap-6">
+                <div class="mt-3 flex gap-6 flex-wrap">
                     <Chip>Vue.js</Chip>
                     <Chip>C#</Chip>
                     <Chip>FFmpeg</Chip>
@@ -54,18 +54,23 @@
                     JavaScript, Python, and debugging workflows. Facilitated code reviews and mentored students in
                     real-world project execution.
                 </p>
-                <div class="mt-3 flex gap-6">
+                <div class="mt-3 flex gap-6 flex-wrap">
                     <Chip>Javascript</Chip>
                     <Chip>Python</Chip>
                     <Chip>HTML/CSS</Chip>
                 </div>
             </div>
         </Section>
-        <hr class="my-16 border-gray-200" />
-        <Section class="text-center py-24">
-            <Heading class="text-3xl mb-6">Like what you see?</Heading>
-            <p class="text-lg mb-4">I'm open to new opportunities, collaborations, or just chatting dev tools.</p>
-            <a href="mailto:iandaviswebdev@gmail.com" class="font-bold underline text-xl hover:text-yellow-500">
+        <hr class="border-gray-200" />
+        <Section class="text-center">
+            <Heading class="text-xl md:text-3xl mb-6">Like what you see?</Heading>
+            <p class="text-base md:text-lg mb-4">
+                I'm open to new opportunities, collaborations, or just chatting dev tools.
+            </p>
+            <a
+                href="mailto:iandaviswebdev@gmail.com"
+                class="font-bold underline text-lg md:text-xl hover:text-yellow-500"
+            >
                 iandaviswebdev@gmail.com
             </a>
         </Section>
