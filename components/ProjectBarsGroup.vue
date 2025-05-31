@@ -1,5 +1,5 @@
 <template>
-    <div class="flex h-screen flex-col md:flex-row">
+    <div class="flex md:h-screen flex-col md:flex-row">
         <ProjectBar v-for="(project, i) in projects" :key="i" :project="project" />
     </div>
 </template>

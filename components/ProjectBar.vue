@@ -5,7 +5,7 @@
                 <img
                     :src="props.project.imageSrc"
                     alt="Project Preview"
-                    class="transition duration-300 h-full ease-in-out filter object-cover brightness-75 grayscale group-hover:brightness-100 group-hover:grayscale-0"
+                    class="transition duration-300 h-50 w-full md:h-full ease-in-out filter object-cover object-center brightness-75 grayscale group-hover:brightness-100 group-hover:grayscale-0"
                 />
             </div>
         </div>

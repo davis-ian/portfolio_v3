@@ -1,14 +1,14 @@
 <template>
-    <div class="min-h-screen flex-grow-1 n py-24 snap-y snap-proximity overflow-auto">
+    <div class="min-h-screen flex-grow-1 n py-24 snap-y snap-proximity overflow-y-auto overflow-x-hidden">
         <Section class="text-center my-24">
-            <Heading class="uppercase text-7xl" style="letter-spacing: -0.06em">Ian Davis</Heading>
+            <Heading class="uppercase lg:text-7xl" style="letter-spacing: -0.06em">Ian Davis</Heading>
             <Heading class="text-xl">Software Engineer</Heading>
             <!-- <p>I build clean and modern websites that focus on <strong>UX</strong> and <strong>performance</strong>.</p> -->
             <p>I build things that feel good and work hard — real-time tools, smart media workflows, and clean UI.</p>
             <Button variant="primary" class="mt-12">Contact Me</Button>
         </Section>
 
-        <FeaturedProject class="snap-center" />
+        <FeaturedProject />
 
         <ProjectBarsGroup class="mt-20 snap-start" />
 
