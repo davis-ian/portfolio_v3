@@ -29,7 +29,6 @@ const projects = [
 const activeIndex = ref(null);
 
 function setActive(index) {
-    console.log(index, 'index to  set', index);
     activeIndex.value = index;
     console.log(activeIndex.value, 'active index');
 }

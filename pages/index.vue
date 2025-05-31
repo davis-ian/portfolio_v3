@@ -1,6 +1,6 @@
 <template>
     <div class="min-h-screen flex-grow-1 n py-24 snap-y snap-proximity overflow-y-auto overflow-x-hidden">
-        <Section class="text-center my-24">
+        <Section class="text-center md:my-24">
             <Heading class="uppercase lg:text-7xl" style="letter-spacing: -0.06em">Ian Davis</Heading>
             <Heading class="text-xl">Software Engineer</Heading>
             <!-- <p>I build clean and modern websites that focus on <strong>UX</strong> and <strong>performance</strong>.</p> -->
