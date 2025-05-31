@@ -32,13 +32,13 @@
 
             <div class="mb-12">
                 <h3 class="text-xl">Software Engineer - MemoryShare</h3>
-                <h3 class="uppercase text-text-secondary">2022 - Present</h3>
+                <h3 class="uppercase text-text-secondary my-1">2022 - Present</h3>
                 <p>
                     Design, build, and maintain scalable web applications spanning front-end, API, and background
                     systems. Led architecture of real-time video rendering pipelines, internal tooling, and
                     customer-facing features, with a focus on performance, UX, and reliability.
                 </p>
-                <div class="mt-3 flex gap-6 flex-wrap">
+                <div class="mt-3 flex gap-2 flex-wrap">
                     <Chip>Vue.js</Chip>
                     <Chip>C#</Chip>
                     <Chip>FFmpeg</Chip>
@@ -48,13 +48,13 @@
             </div>
             <div class="my-12">
                 <h3 class="text-xl">Instructor Assistant - PDX Code Guild</h3>
-                <h3 class="uppercase text-text-secondary">2021 - 2022</h3>
+                <h3 class="uppercase text-text-secondary my-1">2021 - 2022</h3>
                 <p>
                     Supported developer bootcamp students in learning full-stack web development, with emphasis on
                     JavaScript, Python, and debugging workflows. Facilitated code reviews and mentored students in
                     real-world project execution.
                 </p>
-                <div class="mt-3 flex gap-6 flex-wrap">
+                <div class="mt-3 flex gap-2 flex-wrap">
                     <Chip>Javascript</Chip>
                     <Chip>Python</Chip>
                     <Chip>HTML/CSS</Chip>

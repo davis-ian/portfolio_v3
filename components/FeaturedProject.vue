@@ -43,12 +43,17 @@
                 <strong>hand-rolled ECS engine</strong> and <strong>procedurally generated levels</strong>. It’s
                 designed to demonstrate scalable architecture and real-time rendering in a modern frontend stack.
             </p>
-            <div class="mt-3 flex flex-wrap gap-4">
+            <div class="mt-3 flex flex-wrap gap-2">
                 <Chip>Vue 3</Chip>
                 <Chip>TypeScript</Chip>
                 <Chip>Three.js</Chip>
                 <Chip>Custom ECS Engine</Chip>
                 <Chip>Procedurally Generated Levels</Chip>
+            </div>
+
+            <div class="mt-6 flex gap-2">
+                <Button>Play</Button>
+                <Button variant="secondary">Code</Button>
             </div>
         </div>
     </div>
@@ -58,6 +63,7 @@
 import videoSrc from '@/assets/videos/forma-demo.mp4?url';
 
 import Chip from '~/components/ui/Chip.vue';
+import Button from './ui/Button.vue';
 </script>
 
 <style lang="scss" scoped></style>
