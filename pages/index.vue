@@ -10,7 +10,7 @@
 
         <FeaturedProject />
 
-        <ProjectBarsGroup class="mt-20 snap-start" />
+        <ProjectBarsGroup class="mt-20 md:snap-start" />
 
         <Section>
             <Heading>About</Heading>
