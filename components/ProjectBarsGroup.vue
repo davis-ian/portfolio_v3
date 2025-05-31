@@ -1,6 +1,13 @@
 <template>
     <div class="flex h-full flex-col md:flex-row">
-        <ProjectBar v-for="(project, i) in projects" :key="i" :project="project" />
+        <NuxtLink
+            v-for="(project, i) in projects"
+            :key="i"
+            :to="`/projects/${project.slug}`"
+            class="transition-transform hover:scale-[1.02] duration-300"
+        >
+            <ProjectBar class="h-full" :project="project" />
+        </NuxtLink>
     </div>
 </template>
 
@@ -13,9 +20,9 @@ import upnextMock from '@/assets/images/upnext.png';
 import miniMock from '@/assets/images/minigames1.png';
 
 const projects = [
-    { name: 'Upnext', description: '', imageSrc: upnextMock },
-    { name: 'Minigames', description: '', imageSrc: miniMock },
-    { name: 'Clipper', description: '', imageSrc: clipperMock },
+    { name: 'Upnext', slug: 'upnext', imageSrc: upnextMock },
+    { name: 'Minigames', slug: 'minigames', imageSrc: miniMock },
+    { name: 'Clipper', slug: 'ffmpeg-wa', imageSrc: clipperMock },
     // { name: 'Lift Tracker', description: '', imageSrc: imageSrc },
 ];
 </script>

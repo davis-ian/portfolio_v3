@@ -96,10 +96,6 @@ function emailMe() {
     window.location.href = 'mailto:iandaviswebdev@gmail.com';
 }
 
-function openTab(url) {
-    window.open(url, '_blank');
-}
-
 const { currentSection } = useSectionTracker();
 
 const sectionIds = ['featured', 'work', 'about', 'experience']; // your section anchors
