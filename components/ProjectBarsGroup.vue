@@ -5,9 +5,8 @@
             :key="i"
             :project="project"
             :is-active="activeIndex === i"
-            @activate="() => setActive(i)"
-            @hover="() => setActive(i)"
             @leave="clearActive"
+            @hover="() => setActive(i)"
         />
     </div>
 </template>
@@ -30,7 +29,9 @@ const projects = [
 const activeIndex = ref(null);
 
 function setActive(index) {
-    activeIndex.value = activeIndex.value === index ? null : index;
+    console.log(index, 'index to  set', index);
+    activeIndex.value = index;
+    console.log(activeIndex.value, 'active index');
 }
 function clearActive() {
     activeIndex.value = null;

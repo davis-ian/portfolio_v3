@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col group" @click="emit('activate')" @mouseenter="emit('hover')" @mouseleave="emit('leave')">
+    <div class="flex flex-col group" @mouseenter="emit('hover')" @mouseleave="emit('leave')">
         <div class="border-solid flex-grow-1">
             <div class="relative overflow-hidden h-full">
                 <img
@@ -27,7 +27,7 @@ const props = defineProps({
     isActive: Boolean,
 });
 
-const emit = defineEmits(['activate']);
+const emit = defineEmits(['hover', 'leave']);
 </script>
 
 <style lang="scss" scoped></style>
