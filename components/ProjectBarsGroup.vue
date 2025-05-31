@@ -1,10 +1,10 @@
 <template>
-    <div class="flex h-full flex-col md:flex-row">
+    <div class="flex h-full flex-col md:flex-row overflow-hidden">
         <NuxtLink
             v-for="(project, i) in projects"
             :key="i"
             :to="`/projects/${project.slug}`"
-            class="transition-transform hover:scale-[1.02] duration-300"
+            class="transition-transform hover:scale-[1.02] duration-300 border-0"
         >
             <ProjectBar class="h-full" :project="project" />
         </NuxtLink>

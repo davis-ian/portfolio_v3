@@ -3,6 +3,7 @@
 import clipperMock from '@/assets/images/clipper2.png';
 import upnextMock from '@/assets/images/upnext.png';
 import miniMock from '@/assets/images/minigames1.png';
+import formaVideo from '@/assets/videos/forma-demo.mp4?url';
 
 export const projects = [
     {
@@ -10,20 +11,22 @@ export const projects = [
         title: 'UpNext',
         tagline: 'Track what you watch. Share what you love.',
         coverImage: upnextMock,
+        coverVideo: null,
         role: 'Full-stack developer (solo)',
         stack: ['Vue.js', 'C#', 'FFmpeg', 'Azure', 'MySQL'],
         description: `
       <p>UpNext is a full-stack web app that lets users track movies and series, organize custom lists, and see where to stream them. Built with Vue.js and a C# backend, it also uses FFmpeg for video preview generation.</p>
       <p>Authentication is powered by Supabase, and all media is stored and indexed for fast access. The interface emphasizes simplicity, speed, and mobile-first design.</p>
     `,
-        liveUrl: 'https://upnext.dev',
+        liveUrl: 'https://upnext.iandavis.dev/',
         repoUrl: 'https://github.com/davis-ian/upnext_frontend',
     },
     {
         slug: 'forma',
         title: 'Forma',
         tagline: 'A pixel-perfect roguelite dungeon crawler with real-time combat, built in Three.js and ECS.',
-        coverImage: '',
+        coverImage: null,
+        coverVideo: formaVideo,
         role: 'Game Architect & Developer (solo)',
         stack: ['TypeScript', 'Three.js', 'Custom ECS', 'Vite', 'SCSS'],
         description: `
@@ -51,7 +54,7 @@ export const projects = [
             '🎥 Custom camera follow, screen shake, and hit-pause mechanics for satisfying feedback.',
             '🔧 Developer-friendly debug tools for entity inspection and state visualization.',
         ],
-        liveUrl: '', // Optional: deploy to GitHub Pages or itch.io
+        liveUrl: 'https://forma.iandavis.dev/',
         repoUrl: 'https://github.com/davis-ian/forma',
     },
     {
@@ -59,6 +62,7 @@ export const projects = [
         title: 'Minigames',
         tagline: 'A collection of lightweight, interactive web-based games built with Vue 3.',
         coverImage: miniMock,
+        coverVideo: null,
         role: 'Frontend Developer (solo)',
         stack: ['Vue 3', 'TypeScript', 'Vite', 'Pinia', 'TailwindCSS'],
         description: `
@@ -84,7 +88,7 @@ export const projects = [
             '📱 Responsive mobile-friendly layout with minimal dependencies.',
             '🔄 Sound effect hooks and reset/play-again logic handled via component state.',
         ],
-        liveUrl: '', // Optional: deploy to Netlify/Vercel if desired
+        liveUrl: 'https://minigames.iandavis.dev/',
         repoUrl: 'https://github.com/davis-ian/minigame',
     },
     {
@@ -92,6 +96,7 @@ export const projects = [
         title: 'FFmpeg WebAssembly Thumbnail Clipper',
         tagline: 'Client-side video thumbnail clipping using FFmpeg compiled to WebAssembly.',
         coverImage: clipperMock,
+        coverVideo: null,
         role: 'Full-stack Developer (solo)',
         stack: ['Vue 3', 'FFmpeg.wasm', 'TypeScript', 'Vite'],
         description: `
@@ -117,7 +122,7 @@ export const projects = [
             '🛡️ No server — ideal for privacy and portability.',
             '🧩 Modular setup ready for expanding to trim/crop/transcode workflows.',
         ],
-        liveUrl: '', // Optional — can be hosted on Netlify or Vercel if not already
+        liveUrl: 'https://thumbnail.iandavis.dev/',
         repoUrl: 'https://github.com/davis-ian/ffmpeg_wa',
     },
 ];

@@ -1,13 +1,40 @@
 <!-- pages/projects/[slug].vue -->
 <template>
-    <div class="min-h-screen px-4 py-12 md:px-16 lg:px-32">
-        <section class="max-w-4xl mx-auto">
+    <div class="min-h-screen flex-grow-1 py-24 px-6 overflow-y-auto overflow-x-hidden scroll-smooth">
+        <section v-if="project" class="max-w-6xl mx-auto">
             <Heading class="text-5xl font-bold mb-6">{{ project.title }}</Heading>
             <p class="text-xl mb-4 text-gray-600">{{ project.tagline }}</p>
 
-            <img :src="project.coverImage" alt="Project cover" class="rounded-lg mb-8 w-full object-cover" />
+            <video
+                v-if="project?.coverVideo"
+                :src="project.coverVideo"
+                alt="Project cover"
+                class="rounded-lg mb-8 w-full object-cover"
+                autoplay
+                muted
+                loop
+                playsinline
+            />
+            <img
+                v-else-if="project?.coverImage"
+                :src="project.coverImage"
+                alt="Project cover"
+                class="rounded-lg mb-8 w-full object-cover"
+            />
+
+            <div class="my-12 flex gap-4">
+                <Button v-if="project.liveUrl" variant="primary" @click="openTab(project.liveUrl)">Live Demo</Button>
+                <Button v-if="project.repoUrl" variant="secondary" @click="openTab(project.repoUrl)">GitHub</Button>
+            </div>
 
             <div class="prose prose-lg max-w-none mb-12" v-html="project.description"></div>
+
+            <div class="mb-12">
+                <h3 class="font-semibold">Highlights</h3>
+                <div class="flex gap-1 my-2 flex-col">
+                    <div v-for="(highlight, i) in project.highlights" :key="i">{{ highlight }}</div>
+                </div>
+            </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
@@ -18,16 +45,9 @@
                 <div>
                     <h3 class="font-semibold text-gray-800 mb-2">Tech Stack</h3>
                     <div class="flex flex-wrap gap-2">
-                        <Chip v-for="tech in project.stack" :key="tech" :label="tech" />
+                        <Chip v-for="tech in project.stack" :key="tech">{{ tech }}</Chip>
                     </div>
                 </div>
-            </div>
-
-            <div class="mt-12">
-                <Button v-if="project.liveUrl" :href="project.liveUrl" target="_blank">Live Demo</Button>
-                <Button v-if="project.repoUrl" :href="project.repoUrl" class="ml-4" target="_blank" variant="ghost"
-                    >GitHub</Button
-                >
             </div>
         </section>
     </div>
@@ -37,6 +57,9 @@
 import { useRoute } from 'vue-router';
 import { projects } from '~/data/projects';
 import { ref } from 'vue';
+import Button from '~/components/ui/Button.vue';
+import Heading from '~/components/ui/Heading.vue';
+import Chip from '~/components/ui/Chip.vue';
 
 const route = useRoute();
 const project = ref(projects.find(p => p.slug === route.params.slug));
@@ -44,5 +67,9 @@ const project = ref(projects.find(p => p.slug === route.params.slug));
 if (!project.value) {
     // Redirect or show 404
     throw createError({ statusCode: 404, statusMessage: 'Project not found' });
+}
+
+function openTab(url) {
+    window.open(url, '_blank');
 }
 </script>
