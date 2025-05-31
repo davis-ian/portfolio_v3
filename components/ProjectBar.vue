@@ -11,7 +11,7 @@
         </div>
 
         <div
-            class="bg-black hidden md:flex text-white text-2xl overflow-hidden transition-all duration-500 ease-in-out w-full h-20 md:h-0 md:group-hover:h-20"
+            class="bg-black hidden md:flex text-white text-xl lg:text-2xl 2xl:text-4xl  overflow-hidden uppercase transition-all font-black  duration-500 ease-in-out w-full h-30 md:h-0 md:group-hover:h-30"
         >
             <span class="m-4">
                 {{ project.name }}
@@ -19,7 +19,7 @@
         </div>
 
         <div
-            class="bg-black absolute bottom-0 left-0 flex w-fit md:hidden text-white text-xl overflow-hidden transition-all duration-500 ease-in-out p-2"
+            class="bg-black absolute bottom-0 left-0 flex w-fit md:hidden text-white text-xl uppercase  overflow-hidden transition-all duration-500 ease-in-out p-2"
         >
             <span>
                 {{ project.name }}

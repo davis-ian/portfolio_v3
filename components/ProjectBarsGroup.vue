@@ -1,13 +1,6 @@
 <template>
-    <div class="flex md:h-screen flex-col md:flex-row">
-        <ProjectBar
-            v-for="(project, i) in projects"
-            :key="i"
-            :project="project"
-            :is-active="activeIndex === i"
-            @leave="clearActive"
-            @hover="() => setActive(i)"
-        />
+    <div class="flex h-full flex-col md:flex-row">
+        <ProjectBar v-for="(project, i) in projects" :key="i" :project="project" />
     </div>
 </template>
 
@@ -25,16 +18,6 @@ const projects = [
     { name: 'Clipper', description: '', imageSrc: clipperMock },
     // { name: 'Lift Tracker', description: '', imageSrc: imageSrc },
 ];
-
-const activeIndex = ref(null);
-
-function setActive(index) {
-    activeIndex.value = index;
-    console.log(activeIndex.value, 'active index');
-}
-function clearActive() {
-    activeIndex.value = null;
-}
 </script>
 
 <style lang="scss" scoped></style>

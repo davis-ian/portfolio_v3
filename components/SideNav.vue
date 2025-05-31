@@ -1,24 +1,51 @@
 <template>
     <div>
         <header
-            class="border-1 min-w-3xs border-solid border-gray-200 h-screen flex flex-col justify-center sticky top-0 left-0 bottom-0"
+            class="border-1 xl:min-w-3xs border-solid border-gray-200 h-screen flex flex-col justify-center sticky top-0 left-0 bottom-0"
         >
             <div class="p-6 border-t border-gray-200">
-                <p>Work</p>
-                <p>About</p>
-                <p>Experience</p>
+                <p
+                    :class="{
+                        'opacity-50': currentSection !== 'featured',
+                    }"
+                >
+                    <Link href="#featured">Featured</Link>
+                </p>
+                <p :class="{ 'opacity-50': currentSection !== 'work' }">
+                    <Link href="#work">Work</Link>
+                </p>
+                <p :class="{ 'opacity-50': currentSection !== 'about' }">
+                    <Link href="#about">About</Link>
+                </p>
+                <p
+                    :class="{
+                        'opacity-50': currentSection !== 'experience',
+                    }"
+                >
+                    <Link href="#experience">Experience</Link>
+                </p>
             </div>
 
             <div class="p-6 border-y-1 border-gray-200">
                 <h3 class="text-text-secondary uppercase">Contact</h3>
-                <p>Mail</p>
-                <p>LinkedIn</p>
-                <p>Github</p>
+                <p>
+                    <Link href="mailto:iandaviswebdev@gmail.com">Mail</Link>
+                </p>
+                <p>
+                    <Link href="https://www.linkedin.com/in/iandaviswebdev/">LinkedIn</Link>
+                </p>
+                <p>
+                    <Link href="https://github.com/davis-ian">Github</Link>
+                </p>
             </div>
         </header>
     </div>
 </template>
 
-<script setup></script>
+<script setup>
+import Link from './ui/Link.vue';
+
+const { currentSection } = useSectionTracker();
+</script>
 
 <style lang="scss" scoped></style>
