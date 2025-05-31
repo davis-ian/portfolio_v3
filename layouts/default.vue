@@ -1,6 +1,6 @@
 <template>
     <div class="flex h-screen overflow-hidden">
-        <SideNav />
+        <SideNav class="hidden md:block" />
         <slot />
         <!-- <AppFooter /> -->
     </div>
