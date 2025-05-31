@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col group">
-        <div class="border-2 border-solid flex-grow-1">
+        <div class="border-solid flex-grow-1">
             <div class="relative overflow-hidden h-full">
                 <img
                     :src="props.project.imageSrc"

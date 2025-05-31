@@ -1,5 +1,5 @@
 <template>
-    <div class="flex">
+    <div class="flex h-screen overflow-hidden">
         <SideNav />
         <slot />
         <!-- <AppFooter /> -->
