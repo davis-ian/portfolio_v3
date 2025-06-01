@@ -2,7 +2,7 @@
 <template>
     <div class="min-h-screen flex-grow-1 py-24 px-6">
         <section v-if="project" class="max-w-6xl mx-auto">
-            <Heading class="md:text-5xl font-bold mb-6">{{ project.title }}</Heading>
+            <Heading class="md:text-5xl text-3xl font-bold mb-6">{{ project.title }}</Heading>
             <p class="text-xl mb-4 text-gray-600">{{ project.tagline }}</p>
 
             <video
