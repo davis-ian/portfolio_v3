@@ -6,6 +6,8 @@
             <!-- <p>I build clean and modern websites that focus on <strong>UX</strong> and <strong>performance</strong>.</p> -->
             <p>I build things that feel good and work hard — real-time tools, smart media workflows, and clean UI.</p>
             <!-- <Button variant="primary" @click="emailMe" class="mt-12">Contact Me</Button> -->
+
+            <ContactIconGroup />
         </Section>
 
         <div id="featured">
@@ -88,6 +90,7 @@ import FeaturedProject from '~/components/FeaturedProject.vue';
 import ProjectBarsGroup from '~/components/ProjectBarsGroup.vue';
 
 import { onMounted, onUnmounted } from 'vue';
+import ContactIconGroup from '~/components/ContactIconGroup.vue';
 
 function emailMe() {
     window.location.href = 'mailto:iandaviswebdev@gmail.com';
