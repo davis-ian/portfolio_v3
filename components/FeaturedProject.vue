@@ -41,7 +41,14 @@
                         <Icon name="ph:play-fill" class="mr-2 group-hover:animate-spin" />
                         <span> Play Demo </span>
                     </Button>
-                    <Button variant="outline" @click="openTab('/projects/forma')">Details</Button>
+                    <NuxtLink to="/projects/forma">
+                        <Button
+                            variant="outline"
+                            class="shadow-md scale-105 hover:scale-110 transition-transform group"
+                        >
+                            <span>Details</span>
+                        </Button>
+                    </NuxtLink>
                 </div>
             </div>
         </div>
