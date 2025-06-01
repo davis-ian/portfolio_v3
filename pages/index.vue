@@ -5,7 +5,7 @@
             <Heading class="text-xl">Software Engineer</Heading>
             <!-- <p>I build clean and modern websites that focus on <strong>UX</strong> and <strong>performance</strong>.</p> -->
             <p>I build things that feel good and work hard — real-time tools, smart media workflows, and clean UI.</p>
-            <Button variant="primary" @click="emailMe" class="mt-12">Contact Me</Button>
+            <!-- <Button variant="primary" @click="emailMe" class="mt-12">Contact Me</Button> -->
         </Section>
 
         <div id="featured">
@@ -72,10 +72,7 @@
             <p class="text-base md:text-lg mb-4">
                 I'm open to new opportunities, collaborations, or just chatting dev tools.
             </p>
-            <a
-                href="mailto:iandaviswebdev@gmail.com"
-                class="font-bold underline text-lg md:text-xl hover:text-yellow-500"
-            >
+            <a href="mailto:iandaviswebdev@gmail.com" class="font-bold underline text-lg md:text-xl hover:text-accent">
                 iandaviswebdev@gmail.com
             </a>
         </Section>
