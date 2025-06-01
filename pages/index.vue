@@ -1,7 +1,7 @@
 <template>
     <div class="min-h-screen flex-grow-1 pt-24 snap-y snap-proximity overflow-y-auto overflow-x-hidden scroll-smooth">
         <Section class="text-center md:my-24">
-            <Heading class="uppercase lg:text-7xl" style="letter-spacing: -0.06em">Ian Davis</Heading>
+            <Heading class="uppercase text-3xl lg:text-7xl" style="letter-spacing: -0.06em">Ian Davis</Heading>
             <Heading class="text-xl">Software Engineer</Heading>
             <!-- <p>I build clean and modern websites that focus on <strong>UX</strong> and <strong>performance</strong>.</p> -->
             <p>I build things that feel good and work hard — real-time tools, smart media workflows, and clean UI.</p>
@@ -11,20 +11,20 @@
         </Section>
 
         <div id="featured">
-            <Heading class="my-3 px-6 flex align-center">
-                <span class="mr-2"> Featured </span>
-                <ScrollArrow class="mt-2" />
+            <Heading class="my-3 px-6 text-xl md:text-3xl flex align-center">
+                <span class="mr-2 mt-1 md:mt-0"> Featured </span>
+                <ScrollArrow class="md:mt-2" />
             </Heading>
             <FeaturedProject />
         </div>
 
         <div id="work" class="mt-20 md:snap-center md:h-screen flex flex-col">
-            <Heading class="my-3 px-6">Selected Works</Heading>
+            <Heading class="my-3 px-6 text-xl md:text-3xl">Selected Works</Heading>
             <ProjectBarsGroup />
         </div>
 
         <Section id="about">
-            <Heading class="my-3">About</Heading>
+            <Heading class="my-3 text-xl md:text-3xl">About</Heading>
             <p>
                 I’m Ian Davis — a full-stack software engineer who thrives at the intersection of creative UX and
                 high-performance systems. I design and build thoughtful web experiences, balancing clean design with
@@ -39,7 +39,7 @@
         </Section>
 
         <Section id="experience">
-            <Heading class="my-3">Experience</Heading>
+            <Heading class="my-3 text-xl md:text-3xl">Experience</Heading>
 
             <div class="mb-12">
                 <h3 class="uppercase text-text-secondary my-1">2022 - Present</h3>
