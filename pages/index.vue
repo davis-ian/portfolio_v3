@@ -11,7 +11,10 @@
         </Section>
 
         <div id="featured">
-            <Heading class="my-3 px-6">Featured</Heading>
+            <Heading class="my-3 px-6 flex align-center">
+                <span class="mr-2"> Featured </span>
+                <ScrollArrow class="mt-2" />
+            </Heading>
             <FeaturedProject />
         </div>
 
@@ -89,6 +92,7 @@ import Heading from '~/components/ui/Heading.vue';
 import FeaturedProject from '~/components/FeaturedProject.vue';
 import ProjectBarsGroup from '~/components/ProjectBarsGroup.vue';
 
+import ScrollArrow from '~/components/ScrollArrow.vue';
 import { onMounted, onUnmounted } from 'vue';
 import ContactIconGroup from '~/components/ContactIconGroup.vue';
 
