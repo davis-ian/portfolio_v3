@@ -1,6 +1,6 @@
 <template>
-    <footer class="px-4 mt-4 text-center md:hidden">
-        <div class="flex justify-center gap-3 text-lg">
+    <footer class="px-4 mt-6 text-center md:hidden">
+        <div class="flex justify-center gap-6 text-lg">
             <a
                 href="https://github.com/davis-ian"
                 target="_blank"
