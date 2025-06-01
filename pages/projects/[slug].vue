@@ -32,11 +32,14 @@
             <div class="mb-12">
                 <h3 class="font-semibold">Highlights</h3>
                 <div class="flex gap-1 my-2 flex-col">
-                    <div v-for="(highlight, i) in project.highlights" :key="i" class="flex items-center gap-2">
-                        <Icon :name="highlight.icon" class="text-lg font-bold shrink-0" />
-                        <p class="leading-relaxed">
-                            {{ highlight.text }}
-                        </p>
+                    <div v-for="(highlight, i) in project.highlights" :key="i" class="">
+                        <div class="flex items-center gap-2">
+                            <Icon :name="highlight.icon" class="text-lg font-bold shrink-0" />
+                            <p class="leading-relaxed">
+                                {{ highlight.text }}
+                            </p>
+                        </div>
+                        <hr v-if="i !== project.highlights.length - 1" class="border-t border-gray-200 my-2" />
                     </div>
                 </div>
             </div>

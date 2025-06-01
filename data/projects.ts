@@ -118,7 +118,7 @@ export const projects = [
                 text: 'Clean separation between game loop logic and presentation using Vue composables.',
             },
             {
-                icon: 'ph:layers',
+                icon: 'ph:stack',
                 text: 'Built as a modular platform for expanding new game types without refactoring core structure.',
             },
             { icon: 'ph:device-mobile', text: 'Responsive mobile-friendly layout with minimal dependencies.' },
