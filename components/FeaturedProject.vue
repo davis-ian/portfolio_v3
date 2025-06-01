@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col xl:flex-row bg-noise">
+    <div class="flex flex-col xl:flex-row">
         <div class="relative overflow-hidden flex-grow-1">
             <div class="bg-black flex justify-center overflow-hidden">
                 <video
@@ -82,7 +82,7 @@ function openTab(url) {
 </script>
 
 <style lang="scss" scoped>
-.bg-noise {
-    background: radial-gradient(ellipse at center, #f9f9f9 0%, #f0f0f0 100%);
-}
+// .bg-noise {
+//     background: radial-gradient(ellipse at center, #f9f9f9 0%, #f0f0f0 100%);
+// }
 </style>
