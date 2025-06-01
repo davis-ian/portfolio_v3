@@ -10,13 +10,13 @@
                         'opacity-50': currentSection !== 'featured',
                     }"
                 >
-                    <Link href="#featured">Featured</Link>
+                    <Link href="/#featured">Featured</Link>
                 </p>
                 <p class="transition-all duration-200" :class="{ 'opacity-50': currentSection !== 'work' }">
                     <Link href="#work">Work</Link>
                 </p>
                 <p class="transition-all duration-200" :class="{ 'opacity-50': currentSection !== 'about' }">
-                    <Link href="#about">About</Link>
+                    <Link href="/#about">About</Link>
                 </p>
                 <p
                     class="transition-all duration-200"
@@ -24,7 +24,7 @@
                         'opacity-50': currentSection !== 'experience',
                     }"
                 >
-                    <Link href="#experience">Experience</Link>
+                    <Link href="/#experience">Experience</Link>
                 </p>
             </div>
 
