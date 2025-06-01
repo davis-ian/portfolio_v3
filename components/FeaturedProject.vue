@@ -69,8 +69,12 @@
 
             <div class="mt-6 flex gap-2">
                 <Button @click="openTab('https://forma.iandavis.dev/')">Play</Button>
-                <!-- <Button @click="openTab('https://github.com/davis-ian/forma')" variant="secondary">Code</Button> -->
-                <Button @click="openTab('/projects/forma')" variant="secondary">Details</Button>
+
+                <NuxtLink to="/projects/forma">
+                    <Button variant="secondary" class="transition-transform group">
+                        <span>Details</span>
+                    </Button>
+                </NuxtLink>
             </div>
         </div>
     </div>
