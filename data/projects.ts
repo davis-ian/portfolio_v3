@@ -14,10 +14,28 @@ export const projects = [
         coverVideo: null,
         role: 'Full-stack developer (solo)',
         stack: ['Vue.js', 'C#', 'FFmpeg', 'Azure', 'MySQL'],
+        highlights: [
+            {
+                icon: 'ph:globe',
+                text: 'Built a full-stack web application enabling users to track movies and series, organize custom lists, and discover streaming options.',
+            },
+            {
+                icon: 'ph:code',
+                text: 'Developed a Vue.js frontend with a C# backend, utilizing FFmpeg for video preview generation.',
+            },
+            {
+                icon: 'ph:lock-key',
+                text: 'Used Auth0 for login and Railway for storing and indexing user watch lists with fast access.',
+            },
+            {
+                icon: 'ph:device-mobile',
+                text: 'Focused on simplicity, speed, and mobile-first design to enhance user experience.',
+            },
+        ],
         description: `
-      <p>UpNext is a full-stack web app that lets users track movies and series, organize custom lists, and see where to stream them. Built with Vue.js and a C# backend, it also uses FFmpeg for video preview generation.</p>
-      <p>Authentication is powered by Supabase, and all media is stored and indexed for fast access. The interface emphasizes simplicity, speed, and mobile-first design.</p>
-    `,
+    <p>UpNext is a full-stack web app that lets users track movies and series, organize custom lists, and see where to stream them. Built with Vue.js and a C# backend, it also uses FFmpeg for video preview generation.</p>
+    <p>Authentication is powered by Supabase, and all media is stored and indexed for fast access. The interface emphasizes simplicity, speed, and mobile-first design.</p>
+  `,
         liveUrl: 'https://upnext.iandavis.dev/',
         repoUrl: 'https://github.com/davis-ian/upnext_frontend',
     },
@@ -47,12 +65,21 @@ export const projects = [
       </p>
     `,
         highlights: [
-            '⚔️ Custom ECS engine with tag-based targeting, collision, damage, and animation systems.',
-            '🧠 AI behavior with player tracking and group spawning using spatial logic.',
-            '🗺️ Procedurally generated dungeon rooms using node-based layout logic.',
-            '🎯 Pixel-accurate sprite positioning and collision with 3D ECS physics.',
-            '🎥 Custom camera follow, screen shake, and hit-pause mechanics for satisfying feedback.',
-            '🔧 Developer-friendly debug tools for entity inspection and state visualization.',
+            {
+                icon: 'ph:swords',
+                text: 'Custom ECS engine with tag-based targeting, collision, damage, and animation systems.',
+            },
+            { icon: 'ph:brain', text: 'AI behavior with player tracking and group spawning using spatial logic.' },
+            { icon: 'ph:map-trifold', text: 'Procedurally generated dungeon rooms using node-based layout logic.' },
+            { icon: 'ph:bounding-box', text: 'Pixel-accurate sprite positioning and collision with 3D ECS physics.' },
+            {
+                icon: 'ph:camera-shake',
+                text: 'Custom camera follow, screen shake, and hit-pause mechanics for satisfying feedback.',
+            },
+            {
+                icon: 'ph:wrench',
+                text: 'Developer-friendly debug tools for entity inspection and state visualization.',
+            },
         ],
         liveUrl: 'https://forma.iandavis.dev/',
         repoUrl: 'https://github.com/davis-ian/forma',
@@ -82,11 +109,23 @@ export const projects = [
       </p>
     `,
         highlights: [
-            '🎮 Memory Match Game with animated tile flipping and high score saving.',
-            '💡 Clean separation between game loop logic and presentation using Vue composables.',
-            '🧠 Built as a modular platform for expanding new game types without refactoring core structure.',
-            '📱 Responsive mobile-friendly layout with minimal dependencies.',
-            '🔄 Sound effect hooks and reset/play-again logic handled via component state.',
+            {
+                icon: 'ph:game-controller',
+                text: 'Memory Match Game with animated tile flipping and high score saving.',
+            },
+            {
+                icon: 'ph:function',
+                text: 'Clean separation between game loop logic and presentation using Vue composables.',
+            },
+            {
+                icon: 'ph:layers',
+                text: 'Built as a modular platform for expanding new game types without refactoring core structure.',
+            },
+            { icon: 'ph:device-mobile', text: 'Responsive mobile-friendly layout with minimal dependencies.' },
+            {
+                icon: 'ph:speaker-high',
+                text: 'Sound effect hooks and reset/play-again logic handled via component state.',
+            },
         ],
         liveUrl: 'https://minigames.iandavis.dev/',
         repoUrl: 'https://github.com/davis-ian/minigame',
@@ -116,11 +155,11 @@ export const projects = [
       </p>
     `,
         highlights: [
-            '📦 100% client-side FFmpeg video processing using FFmpeg.wasm.',
-            '⚙️ Efficient video loading and frame extraction with zero upload delay.',
-            '🧪 Interactive UI with real-time video scrubbing and frame preview.',
-            '🛡️ No server — ideal for privacy and portability.',
-            '🧩 Modular setup ready for expanding to trim/crop/transcode workflows.',
+            { icon: 'ph:cpu', text: '100% client-side FFmpeg video processing using FFmpeg.wasm.' },
+            { icon: 'ph:video', text: 'Efficient video loading and frame extraction with zero upload delay.' },
+            { icon: 'ph:film-strip', text: 'Interactive UI with real-time video scrubbing and frame preview.' },
+            { icon: 'ph:shield-check', text: 'No server — ideal for privacy and portability.' },
+            { icon: 'ph:puzzle-piece', text: 'Modular setup ready for expanding to trim/crop/transcode workflows.' },
         ],
         liveUrl: 'https://thumbnail.iandavis.dev/',
         repoUrl: 'https://github.com/davis-ian/ffmpeg_wa',
