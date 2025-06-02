@@ -63,36 +63,45 @@ export const projects = [
         stack: ['TypeScript', 'Three.js', 'Custom ECS', 'Vite', 'SCSS'],
         description: `
       <p>
-        <strong>Forma</strong> is a real-time, action roguelite game built entirely in JavaScript using <strong>Three.js</strong>
-        and a custom-built <strong>Entity Component System (ECS)</strong> architecture. The game blends smooth 2D sprite aesthetics
-        with a fully dynamic 3D world, enabling tight control over animation timing, hitbox precision, and camera effects.
-      </p>
-      <p>
-        This project was designed not only as a gameplay prototype, but as a demonstration of clean system architecture,
-        ECS design principles, and performant render pipelines using raw Three.js and GLSL shaders. The ECS system supports
-        full modularity, real-time combat, damage systems, AI pathfinding, room generation, and debugging tools.
-      </p>
-      <p>
-        I built Forma to challenge myself to apply <strong>FAANG-level engineering patterns</strong> in a creative domain,
-        prioritizing clean separation of concerns, system debuggability, and maintainability at scale. All animations, physics,
-        enemy behavior, and effects are managed through ECS-driven update cycles.
-      </p>
+    <strong>Forma</strong> is a real-time, action roguelite built entirely in JavaScript using <strong>Three.js</strong>
+    and a custom <strong>Entity Component System (ECS)</strong> architecture. The game leverages low-poly 3D meshes with
+    a stylized aesthetic to create responsive combat, procedural level design, and expressive animations in a fully dynamic 3D world.
+  </p>
+  <p>
+    This project serves as both a gameplay prototype and an engineering showcase—demonstrating clean ECS design,
+    performance-oriented rendering, and modular system architecture. The ECS core powers real-time combat, AI, collision systems,
+    and custom camera logic, with all gameplay state managed through update cycles.
+  </p>
+  <p>
+    Forma was built to simulate <strong>FAANG-level engineering practices</strong> in a creative setting—emphasizing testability,
+    maintainability, and separation of concerns. Every mechanic, from screen shake to hit detection, is powered by decoupled systems
+    and minimal shared state.
+  </p>
     `,
         highlights: [
             {
-                icon: 'ph:swords',
-                text: 'Custom ECS engine with tag-based targeting, collision, damage, and animation systems.',
+                icon: 'ph:cube',
+                text: 'Custom ECS engine with modular systems for targeting, collision, damage, and animation.',
             },
-            { icon: 'ph:brain', text: 'AI behavior with player tracking and group spawning using spatial logic.' },
-            { icon: 'ph:map-trifold', text: 'Procedurally generated dungeon rooms using node-based layout logic.' },
-            { icon: 'ph:bounding-box', text: 'Pixel-accurate sprite positioning and collision with 3D ECS physics.' },
             {
-                icon: 'ph:camera-shake',
-                text: 'Custom camera follow, screen shake, and hit-pause mechanics for satisfying feedback.',
+                icon: 'ph:brain',
+                text: 'AI behavior with spatial awareness, player tracking, and coordinated group spawning.',
+            },
+            {
+                icon: 'ph:map-trifold',
+                text: 'Procedural dungeon generation with room graphs and dynamic exit placement.',
+            },
+            {
+                icon: 'ph:bounding-box',
+                text: 'Accurate 3D collision and hitbox logic using mesh-based physics and ECS components.',
+            },
+            {
+                icon: 'ph:camera',
+                text: 'Responsive camera systems with follow behavior, hit-pause, and dynamic screen shake.',
             },
             {
                 icon: 'ph:wrench',
-                text: 'Developer-friendly debug tools for entity inspection and state visualization.',
+                text: 'In-game debug tools for real-time entity inspection and system state visualization.',
             },
         ],
         liveUrl: 'https://forma.iandavis.dev/',
