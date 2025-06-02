@@ -44,7 +44,7 @@
             </div>
         </div>
 
-        <div class="p-4">
+        <div class="py-4 mx-6">
             <p class="mt-2">
                 Forma is a 3D roguelite sandbox with custom ECS and procedurally generated dungeons — all in a modern
                 Vue + Three.js stack.
