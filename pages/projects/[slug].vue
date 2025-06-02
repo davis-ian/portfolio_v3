@@ -27,7 +27,7 @@
                 <Button v-if="project.repoUrl" variant="secondary" @click="openTab(project.repoUrl)">GitHub</Button>
             </div>
 
-            <div class="prose prose-lg max-w-none mb-12" v-html="project.description"></div>
+            <div class="prose prose-lg max-w-none mb-12 description" v-html="project.description"></div>
 
             <div class="mb-12">
                 <h3 class="font-semibold">Highlights</h3>
@@ -46,15 +46,15 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                    <h3 class="font-semibold text-gray-800 mb-2">My Role</h3>
-                    <p>{{ project.role }}</p>
-                </div>
-
-                <div>
                     <h3 class="font-semibold text-gray-800 mb-2">Tech Stack</h3>
                     <div class="flex flex-wrap gap-2">
                         <Chip v-for="tech in project.stack" :key="tech">{{ tech }}</Chip>
                     </div>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold text-gray-800 mb-2">My Role</h3>
+                    <p>{{ project.role }}</p>
                 </div>
             </div>
         </section>
@@ -81,3 +81,9 @@ function openTab(url) {
     window.open(url, '_blank');
 }
 </script>
+
+<style lang="scss">
+.description p {
+    margin: 24px 0;
+}
+</style>

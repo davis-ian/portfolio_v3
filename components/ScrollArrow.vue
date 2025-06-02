@@ -14,7 +14,7 @@ onMounted(() => {
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: '/animations/arrow-left-down.json', // <-- place the file in public/animations
+        path: '/animations/arrow-left-down2.json', // <-- place the file in public/animations
     });
 });
 </script>

@@ -13,7 +13,7 @@
                     <Link href="/#featured">Featured</Link>
                 </p>
                 <p class="transition-all duration-200" :class="{ 'opacity-50': currentSection !== 'work' }">
-                    <Link href="#work">Work</Link>
+                    <Link href="/#work">Work</Link>
                 </p>
                 <p class="transition-all duration-200" :class="{ 'opacity-50': currentSection !== 'about' }">
                     <Link href="/#about">About</Link>
