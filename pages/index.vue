@@ -13,6 +13,7 @@
         <div id="featured">
             <Heading class="my-3 px-6 text-xl md:text-3xl flex align-center">
                 <span class="mr-2 mt-1 md:mt-0"> Featured </span>
+
                 <ScrollArrow class="md:mt-2" />
             </Heading>
             <FeaturedProject />
@@ -25,6 +26,7 @@
 
         <Section id="about">
             <Heading class="my-3 text-xl md:text-3xl">About</Heading>
+
             <p>
                 I’m Ian Davis — a full-stack software engineer who thrives at the intersection of creative UX and
                 high-performance systems. I design and build thoughtful web experiences, balancing clean design with
@@ -91,7 +93,7 @@ import Section from '~/components/ui/Section.vue';
 import Heading from '~/components/ui/Heading.vue';
 import FeaturedProject from '~/components/FeaturedProject.vue';
 import ProjectBarsGroup from '~/components/ProjectBarsGroup.vue';
-
+import AnimatedUnderline from '~/components/ui/AnimatedUnderline.vue';
 import ScrollArrow from '~/components/ScrollArrow.vue';
 import { onMounted, onUnmounted } from 'vue';
 import ContactIconGroup from '~/components/ContactIconGroup.vue';

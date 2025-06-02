@@ -12,32 +12,46 @@ export const projects = [
         tagline: 'Track what you watch. Share what you love.',
         coverImage: upnextMock,
         coverVideo: null,
-        role: 'Full-stack developer (solo)',
-        stack: ['Vue.js', 'C#', 'FFmpeg', 'Azure', 'MySQL'],
+        role: 'Full-stack Developer (Frontend + Backend)',
+        stack: [
+            'TypeScript',
+            'Node.js',
+            'Express',
+            'PostgreSQL (Railway)',
+            'Auth0',
+            'TMDB API',
+            'Vue 3',
+            'Tailwind CSS',
+        ],
         highlights: [
             {
-                icon: 'ph:globe',
-                text: 'Built a full-stack web application enabling users to track movies and series, organize custom lists, and discover streaming options.',
+                icon: 'ph:users-three',
+                text: 'Users can create shared watchlists to collaborate with friends.',
             },
             {
-                icon: 'ph:code',
-                text: 'Developed a Vue.js frontend with a C# backend, utilizing FFmpeg for video preview generation.',
+                icon: 'ph:check-circle',
+                text: 'Tracks which shows and movies each user has watched.',
             },
             {
-                icon: 'ph:lock-key',
-                text: 'Used Auth0 for login and Railway for storing and indexing user watch lists with fast access.',
+                icon: 'ph:film-slate',
+                text: 'Integrates with TMDB for title data, images, and trailers.',
             },
             {
-                icon: 'ph:device-mobile',
-                text: 'Focused on simplicity, speed, and mobile-first design to enhance user experience.',
+                icon: 'ph:key',
+                text: 'Auth0 handles secure authentication and session management.',
+            },
+            {
+                icon: 'ph:database',
+                text: 'PostgreSQL hosted on Railway stores user lists and activity.',
             },
         ],
         description: `
-    <p>UpNext is a full-stack web app that lets users track movies and series, organize custom lists, and see where to stream them. Built with Vue.js and a C# backend, it also uses FFmpeg for video preview generation.</p>
-    <p>Authentication is powered by Supabase, and all media is stored and indexed for fast access. The interface emphasizes simplicity, speed, and mobile-first design.</p>
+    <p><strong>UpNext</strong> is a collaborative watchlist platform where users can keep track of movies and shows they want to watch—and share lists with others. It's designed to be social and easy to use, combining the simplicity of a to-do list with the richness of a streaming companion app.</p>
+    <p>Authentication is handled by <strong>Auth0</strong>, and data is persisted with <strong>PostgreSQL</strong> via Railway. The app fetches title metadata, trailers, and cover art using the TMDB API.</p>
+    <p>The backend is written in <strong>TypeScript</strong> with <strong>Express</strong>, while the frontend is built using <strong>Vue 3</strong> and <strong>Tailwind CSS</strong>.</p>
   `,
         liveUrl: 'https://upnext.iandavis.dev/',
-        repoUrl: 'https://github.com/davis-ian/upnext_frontend',
+        repoUrl: 'https://github.com/davis-ian?tab=repositories&q=upnext&type=public&language=&sort=',
     },
     {
         slug: 'forma',
