@@ -13,18 +13,18 @@ export default defineNuxtConfig({
     },
     app: {
         head: {
-            title: 'Ian Davis – Full Stack Engineer & Builder',
+            title: 'Ian Davis',
             meta: [
                 {
                     name: 'description',
                     content:
-                        'Portfolio of Ian Davis – Full Stack Engineer. Building performant, creative, and production-ready applications with C#, Vue.js, and modern tools.',
+                        'Portfolio of Ian Davis – Sofware Engineer. Building performant, creative, and production-ready applications with C#, Vue.js, and modern tools.',
                 },
                 { name: 'keywords', content: 'Ian Davis, Software Developer, Full Stack Engineer, C#, Vue, Portfolio' },
                 { name: 'author', content: 'Ian Davis' },
 
                 // Open Graph
-                { property: 'og:title', content: 'Ian Davis – Full Stack Engineer & Builder' },
+                { property: 'og:title', content: 'Ian Davis – Software Engineer' },
                 {
                     property: 'og:description',
                     content:
@@ -36,7 +36,7 @@ export default defineNuxtConfig({
 
                 // Twitter Card
                 { name: 'twitter:card', content: 'summary_large_image' },
-                { name: 'twitter:title', content: 'Ian Davis – Full Stack Engineer & Builder' },
+                { name: 'twitter:title', content: 'Ian Davis – Software Engineer' },
                 {
                     name: 'twitter:description',
                     content:
