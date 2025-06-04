@@ -9,4 +9,9 @@ export default defineAppConfig({
             error: 'var(--color-error)',
         },
     },
+    seo: {
+        title: 'Ian Davis – Full Stack Engineer & Builder',
+        description:
+            'Portfolio of Ian Davis – Full Stack Engineer. Building performant, creative, and production-ready applications with C#, Vue.js, and modern tools.',
+    },
 });
