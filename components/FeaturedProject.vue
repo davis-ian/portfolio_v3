@@ -33,7 +33,7 @@
                         class="scale-105 hover:scale-110 transition-transform group"
                     >
                         <Icon name="ph:play-fill" class="mr-2" />
-                        <span> Play Demo </span>
+                        <span > Play Demo </span>
                     </Button>
                     <NuxtLink to="/projects/forma">
                         <Button variant="outline" class="scale-105 hover:scale-110 transition-transform group">
@@ -46,7 +46,7 @@
 
         <div class="py-4 mx-6">
             <p class="mt-2">
-                Forma is a 3D roguelite sandbox with custom ECS and procedurally generated dungeons — all in a modern
+                Forma is a 3D roguelite sandbox with custom ECS and procedurally generated dungeons, all in a modern
                 Vue + Three.js stack.
             </p>
             <div class="mt-3 flex flex-wrap gap-2">

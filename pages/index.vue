@@ -1,10 +1,10 @@
 <template>
     <div class="min-h-screen flex-grow-1 pt-24 snap-y snap-proximity overflow-y-auto overflow-x-hidden scroll-smooth">
         <Section class="text-center md:my-24">
-            <Heading class="uppercase text-3xl lg:text-7xl" style="letter-spacing: -0.06em">Ian Davis</Heading>
-            <Heading class="text-xl">Software Engineer</Heading>
+            <Heading class="uppercase  text-3xl lg:text-7xl" style="letter-spacing: -0.06em"><span>Ian</span><span class="text-accent">Davis</span></Heading>
+            <Heading class="text-xl ">Software Engineer</Heading>
             <!-- <p>I build clean and modern websites that focus on <strong>UX</strong> and <strong>performance</strong>.</p> -->
-            <p>I build things that feel good and work hard — real-time tools, smart media workflows, and clean UI.</p>
+            <p>I build things that feel good and work hard. Real-time tools, smart media workflows, and clean UI.</p>
             <!-- <Button variant="primary" @click="emailMe" class="mt-12">Contact Me</Button> -->
 
             <ContactIconGroup />
@@ -12,7 +12,7 @@
 
         <div id="featured">
             <Heading class="my-3 px-6 text-xl md:text-3xl flex align-center">
-                <span class="mr-2 mt-1 md:mt-0"> Featured </span>
+                <span class="mr-2 mt-1 text-accent md:mt-0"> Featured </span>
 
                 <ScrollArrow class="md:mt-2" />
             </Heading>
@@ -20,18 +20,18 @@
         </div>
 
         <div id="work" class="mt-20 md:snap-center md:h-screen flex flex-col">
-            <Heading class="my-3 px-6 text-xl md:text-3xl">Selected Works</Heading>
+            <Heading  class="my-3 px-6 text-xl text-accent md:text-3xl">Selected Works</Heading>
             <ProjectBarsGroup />
         </div>
 
         <Section id="about">
-            <Heading class="my-3 text-xl md:text-3xl">About</Heading>
+            <Heading class="my-3 text-xl text-accent md:text-3xl">About</Heading>
 
             <p>
-                I’m Ian Davis — a full-stack software engineer who thrives at the intersection of creative UX and
+                I’m Ian Davis, a full-stack software engineer who thrives at the intersection of creative UX and
                 high-performance systems. I design and build thoughtful web experiences, balancing clean design with
                 scalable backend architecture. At <a href="https://memoryshare.com" target="_blank">MemoryShare</a>, I
-                lead development across the entire stack — from Vue.js frontends to C# APIs, background render
+                lead development across the entire stack, from Vue.js frontends to C# APIs, background render
                 pipelines, and real-time features powered by SignalR and Azure. I’ve architected video rendering
                 engines, built perceptual hashing systems, and shipped real-time collaborative tools. Outside of work, I
                 obsess over developer experience, visual polish, and building tools that feel fun to use. Whether I’m
@@ -41,7 +41,7 @@
         </Section>
 
         <Section id="experience">
-            <Heading class="my-3 text-xl md:text-3xl">Experience</Heading>
+            <Heading class="my-3 text-xl text-accent md:text-3xl">Experience</Heading>
 
             <div class="mb-12">
                 <h3 class="uppercase text-text-secondary my-1">2022 - Present</h3>
@@ -79,7 +79,7 @@
             <p class="text-base md:text-lg mb-4">
                 I'm open to new opportunities, collaborations, or just chatting dev tools.
             </p>
-            <a href="mailto:iandaviswebdev@gmail.com" class="font-bold underline text-lg md:text-xl hover:text-accent">
+            <a href="mailto:iandaviswebdev@gmail.com" class="font-bold underline text-lg md:text-xl text-accent">
                 iandaviswebdev@gmail.com
             </a>
         </Section>

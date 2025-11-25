@@ -46,7 +46,7 @@ export const projects = [
             },
         ],
         description: `
-    <p><strong>UpNext</strong> is a collaborative watchlist platform where users can keep track of movies and shows they want to watch—and share lists with others. It's designed to be social and easy to use, combining the simplicity of a to-do list with the richness of a streaming companion app.</p>
+    <p><strong>UpNext</strong> is a collaborative watchlist platform where users can keep track of movies and shows they want to watch and share lists with others. It's designed to be social and easy to use, combining the simplicity of a to-do list with the richness of a streaming companion app.</p>
     <p>Authentication is handled by <strong>Auth0</strong>, and data is persisted with <strong>PostgreSQL</strong> via Railway. The app fetches title metadata, trailers, and cover art using the TMDB API.</p>
     <p>The backend is written in <strong>TypeScript</strong> with <strong>Express</strong>, while the frontend is built using <strong>Vue 3</strong> and <strong>Tailwind CSS</strong>.</p>
   `,
@@ -124,7 +124,7 @@ export const projects = [
       <p>
         This project serves as a creative sandbox to test modern frontend patterns like global state management with <strong>Pinia</strong>,
         reactivity handling in game loops, and performance optimization in real-time interactions.
-        It’s also a visual playground — each game is styled using <strong>TailwindCSS</strong> and adapts to mobile and desktop layouts.
+        It’s also a visual playground, each game is styled using <strong>TailwindCSS</strong> and adapts to mobile and desktop layouts.
       </p>
       <p>
         Beyond prototyping game logic, the goal was to write production-quality component structure for each game,
@@ -164,7 +164,7 @@ export const projects = [
         description: `
       <p>
         <strong>FFmpeg WebAssembly Clipper</strong> is a browser-based tool that allows users to clip thumbnails from local
-        video files — entirely client-side. Built with <strong>FFmpeg.wasm</strong>, this project eliminates the need for file uploads or
+        video files, entirely client-side. Built with <strong>FFmpeg.wasm</strong>, this project eliminates the need for file uploads or
         server processing by running FFmpeg directly in the browser via WebAssembly.
       </p>
       <p>
@@ -174,7 +174,7 @@ export const projects = [
       </p>
       <p>
         Users can load local video files, scrub through frames, and extract high-resolution thumbnail clips
-        in seconds — ideal for developers, content creators, or media platforms seeking lightweight tooling.
+        in seconds, ideal for developers, content creators, or media platforms seeking lightweight tooling.
       </p>
     `,
         highlights: [

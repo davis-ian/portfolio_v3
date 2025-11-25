@@ -2,8 +2,8 @@
 <template>
     <div class="min-h-screen flex-grow-1 py-24 px-6">
         <section v-if="project" class="max-w-6xl mx-auto">
-            <Heading class="md:text-5xl text-3xl font-bold mb-6">{{ project.title }}</Heading>
-            <p class="text-xl mb-4 text-gray-600">{{ project.tagline }}</p>
+            <Heading class="md:text-5xl text-3xl font-bold mb-6 text-text-primary">{{ project.title }}</Heading>
+            <p class="text-xl mb-4 text-text-secondary">{{ project.tagline }}</p>
 
             <video
                 v-if="project?.coverVideo"
@@ -46,14 +46,14 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                    <h3 class="font-semibold text-gray-800 mb-2">Tech Stack</h3>
+                    <h3 class="font-semibold text-accent mb-2">Tech Stack</h3>
                     <div class="flex flex-wrap gap-2">
                         <Chip v-for="tech in project.stack" :key="tech">{{ tech }}</Chip>
                     </div>
                 </div>
 
                 <div>
-                    <h3 class="font-semibold text-gray-800 mb-2">My Role</h3>
+                    <h3 class="font-semibold text-accent mb-2">My Role</h3>
                     <p>{{ project.role }}</p>
                 </div>
             </div>
