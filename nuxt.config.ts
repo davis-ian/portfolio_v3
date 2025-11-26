@@ -44,7 +44,23 @@ export default defineNuxtConfig({
                 },
                 { name: 'twitter:image', content: 'https://iandavis.dev/social-preview.png' },
             ],
-            link: [{ rel: 'canonical', href: 'https://iandavis.dev' }],
+            link: [{ rel: 'canonical', href: 'https://iandavis.dev' },
+                 // Preload critical fonts
+                {
+                    rel: 'preload',
+                    href: '/fonts/Satoshi-Regular.woff2',
+                    as: 'font',
+                    type: 'font/woff2',
+                    crossorigin: 'anonymous'
+                },
+                {
+                    rel: 'preload',
+                    href: '/fonts/Satoshi-Bold.woff2',
+                    as: 'font',
+                    type: 'font/woff2',
+                    crossorigin: 'anonymous'
+                }
+            ],
         },
     },
 });
