@@ -1,6 +1,7 @@
 // /data/projects.ts
 
-import clipperMock from '@/assets/images/clipper2.png';
+// import clipperMock from '@/assets/images/clipper2.png';
+import callsignMock from '@/assets/images/callsign-mockup2.png';
 import upnextMock from '@/assets/images/upnext.png';
 import miniMock from '@/assets/images/minigames1.png';
 import formaVideo from '@/assets/videos/forma-demo.mp4?url';
@@ -153,38 +154,72 @@ export const projects = [
         liveUrl: 'https://minigames.iandavis.dev/',
         repoUrl: 'https://github.com/davis-ian/minigame',
     },
+    // {
+    //     slug: 'ffmpeg-wa',
+    //     title: 'FFmpeg WebAssembly Thumbnail Clipper',
+    //     tagline: 'Client-side video thumbnail clipping using FFmpeg compiled to WebAssembly.',
+    //     coverImage: clipperMock,
+    //     coverVideo: null,
+    //     role: 'Full-stack Developer (solo)',
+    //     stack: ['Vue 3', 'FFmpeg.wasm', 'TypeScript', 'Vite'],
+    //     description: `
+    //   <p>
+    //     <strong>FFmpeg WebAssembly Clipper</strong> is a browser-based tool that allows users to clip thumbnails from local
+    //     video files, entirely client-side. Built with <strong>FFmpeg.wasm</strong>, this project eliminates the need for file uploads or
+    //     server processing by running FFmpeg directly in the browser via WebAssembly.
+    //   </p>
+    //   <p>
+    //     This project explores the potential of high-performance native tools like FFmpeg being ported to the web.
+    //     It demonstrates the power of WebAssembly for enabling complex video operations within the browser sandbox,
+    //     without any backend dependencies.
+    //   </p>
+    //   <p>
+    //     Users can load local video files, scrub through frames, and extract high-resolution thumbnail clips
+    //     in seconds, ideal for developers, content creators, or media platforms seeking lightweight tooling.
+    //   </p>
+    // `,
+    //     highlights: [
+    //         { icon: 'ph:cpu', text: '100% client-side FFmpeg video processing using FFmpeg.wasm.' },
+    //         { icon: 'ph:video', text: 'Efficient video loading and frame extraction with zero upload delay.' },
+    //         { icon: 'ph:film-strip', text: 'Interactive UI with real-time video scrubbing and frame preview.' },
+    //         { icon: 'ph:shield-check', text: 'No server — ideal for privacy and portability.' },
+    //         { icon: 'ph:puzzle-piece', text: 'Modular setup ready for expanding to trim/crop/transcode workflows.' },
+    //     ],
+    //     liveUrl: 'https://thumbnail.iandavis.dev/',
+    //     repoUrl: 'https://github.com/davis-ian/ffmpeg_wa',
+    // },
     {
-        slug: 'ffmpeg-wa',
-        title: 'FFmpeg WebAssembly Thumbnail Clipper',
-        tagline: 'Client-side video thumbnail clipping using FFmpeg compiled to WebAssembly.',
-        coverImage: clipperMock,
-        coverVideo: null,
-        role: 'Full-stack Developer (solo)',
-        stack: ['Vue 3', 'FFmpeg.wasm', 'TypeScript', 'Vite'],
-        description: `
+    slug: 'callsign',
+    title: 'Callsign - OpenAPI Explorer for VS Code',
+    tagline: 'Interactive OpenAPI specification viewer and HTTP client built into your editor.',
+    coverImage: callsignMock,
+    coverVideo: null,
+    role: 'Full-stack Developer (solo)',
+    stack: ['TypeScript', 'VS Code Extension API', 'Webview UI', 'OpenAPI 3.x'],
+  description: `
       <p>
-        <strong>FFmpeg WebAssembly Clipper</strong> is a browser-based tool that allows users to clip thumbnails from local
-        video files, entirely client-side. Built with <strong>FFmpeg.wasm</strong>, this project eliminates the need for file uploads or
-        server processing by running FFmpeg directly in the browser via WebAssembly.
+        <strong>Callsign</strong> is a VS Code extension that transforms OpenAPI specifications into an interactive,
+        developer-friendly interface directly within your editor. It parses OpenAPI 3.x documents and presents
+        endpoints, schemas, and parameters in a clean, navigable UI—eliminating context switching to external tools.
       </p>
       <p>
-        This project explores the potential of high-performance native tools like FFmpeg being ported to the web.
-        It demonstrates the power of WebAssembly for enabling complex video operations within the browser sandbox,
-        without any backend dependencies.
+        Built with the VS Code Extension API, Callsign provides real-time API exploration with features like
+        endpoint filtering, request building, and schema visualization. It's designed for developers who want
+        fast, local access to API documentation without leaving their development environment.
       </p>
       <p>
-        Users can load local video files, scrub through frames, and extract high-resolution thumbnail clips
-        in seconds, ideal for developers, content creators, or media platforms seeking lightweight tooling.
+        Whether you're integrating third-party APIs or documenting your own services, Callsign streamlines
+        the workflow by keeping everything in one place—your code editor.
       </p>
     `,
-        highlights: [
-            { icon: 'ph:cpu', text: '100% client-side FFmpeg video processing using FFmpeg.wasm.' },
-            { icon: 'ph:video', text: 'Efficient video loading and frame extraction with zero upload delay.' },
-            { icon: 'ph:film-strip', text: 'Interactive UI with real-time video scrubbing and frame preview.' },
-            { icon: 'ph:shield-check', text: 'No server — ideal for privacy and portability.' },
-            { icon: 'ph:puzzle-piece', text: 'Modular setup ready for expanding to trim/crop/transcode workflows.' },
-        ],
-        liveUrl: 'https://thumbnail.iandavis.dev/',
-        repoUrl: 'https://github.com/davis-ian/ffmpeg_wa',
-    },
+    highlights: [
+        { icon: 'ph:file-code', text: 'Parses and visualizes OpenAPI 3.x specifications natively in VS Code.' },
+        { icon: 'ph:magnifying-glass', text: 'Search and filter endpoints by path, method, or tag.' },
+        { icon: 'ph:tree-structure', text: 'Explore request/response schemas with expandable JSON views.' },
+        { icon: 'ph:lightning', text: 'Built-in HTTP client for testing endpoints without leaving the editor.' },
+        { icon: 'ph:plug', text: 'Extensible architecture ready for custom OpenAPI transformations.' },
+    ],
+    liveUrl: 'https://marketplace.visualstudio.com/items?itemName=ian-davis.callsign',
+    repoUrl: 'https://github.com/davis-ian/vscode-callsign',
+}
 ];
