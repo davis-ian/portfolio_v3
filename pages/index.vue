@@ -72,6 +72,20 @@
                     <Chip>HTML/CSS</Chip>
                 </div>
             </div>
+
+            <div class="text-center">
+
+            <NuxtLink
+            href="/docs/resume2026.pdf"
+            download="Ian_Davis_Resume.pdf"
+            external
+            >
+              <Button variant="outline" class="scale-105 hover:scale-110 transition-transform group">
+                Download Resume
+              </Button>
+            </NuxtLink>
+
+            </div>
         </Section>
         <hr class="border-gray-200" />
         <Section class="text-center">
