@@ -11,7 +11,7 @@
         <Icon name="ph:github-logo" />
       </a>
       <a
-        href="https://linkedin.com/in/hello.iandavis"
+        href="https://linkedin.com/in/iandavisdev"
         target="_blank"
         rel="noopener"
         aria-label="LinkedIn"

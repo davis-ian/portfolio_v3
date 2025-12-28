@@ -6,7 +6,7 @@
     <div class="space-y-2">
       <a :href="emailHref" class="block hover:underline">Mail</a>
       <a
-        href="https://linkedin.com/in/hello.iandavis"
+        href="https://linkedin.com/in/iandavisdev"
         target="_blank"
         class="block hover:underline"
         >LinkedIn</a

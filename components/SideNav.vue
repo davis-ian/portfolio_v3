@@ -40,9 +40,7 @@
           <Link :href="emailHref">Mail</Link>
         </p>
         <p>
-          <Link href="https://www.linkedin.com/in/hello.iandavis/"
-            >LinkedIn</Link
-          >
+          <Link href="https://www.linkedin.com/in/iandavisdev">LinkedIn</Link>
         </p>
         <p>
           <Link href="https://github.com/davis-ian">Github</Link>
